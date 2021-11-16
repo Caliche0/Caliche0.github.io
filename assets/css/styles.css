@@ -40,7 +40,7 @@ main {
 
 .left {
   background-color: #326184;
-  width: 30%;
+  width: 40%;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -66,17 +66,15 @@ main {
 
 .right {
   background-color: #152a37;
-  width: 70%;
+  width: 60%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-left: medium solid black;
+  color: white;
 }
 
-.right-text {
-  color: white;
+.right-title, .right-personal, .right-academic, .right-interests {
   margin-left: 10px;
-  margin-right: 10px;
-  text-align: right;
 }
 
 .year, .copyright {
