@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav {
+  background-color: #326184;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.nav-logo {
+  display: inline;
+  color: white;
+  margin-left: 10px ;
+}
+
+.nav-about {
+  font-size: x-large;
+  margin-right: 10px;
+  float: right;
+  color: white;
+}
+
+.nav-index {
+  font-size: x-large;
+  margin-right: 10px;
+  float: right;
+  color: white;
+}
+
+main {
+  background-color: aquamarine;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.left {
+  background-color: #326184;
+  width: 30%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.left-up {
+  background-color: #50a6db;
+  border-top-left-radius: 20px;
+  border-bottom: medium solid black;
+  text-align: center;
+}
+
+.left-up__image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.left-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.right {
+  background-color: #152a37;
+  width: 70%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: medium solid black;
+}
+
+.right-text {
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.year, .copyright {
+  display: inline;
+  margin-left: 20px;
+}
+
+.author {
+  display: inline;
+}
+.color1 {color: #140f07;}
+.color2 {color: #152a37;}
+.color3 {color: #326184;}
+.color4 {color: #50a6db;}
+.color5 {color: #77f4fe;}
