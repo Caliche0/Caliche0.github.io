@@ -64,6 +64,14 @@ main {
   margin-right: 10px;
 }
 
+.left-down__1stsection {
+  display: flex;
+}
+
+.left-down__points {
+  list-style: none;
+}
+
 .right {
   background-color: #152a37;
   width: 60%;
