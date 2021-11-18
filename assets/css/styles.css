@@ -88,6 +88,7 @@ main {
 .left {
   background-color: #326184;
   width: 40%;
+  padding: 10px 25px;
 }
 
 .left__up {
@@ -108,41 +109,39 @@ main {
   margin: 0 auto;
 }
 
-.left__text {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 hr {
   color: var(--white-color);
   width: 75%;
-  margin-left: 10px;
 }
 
 .left__softwares {
   display: flex;
 }
 
-.left__softwares-list,
-.left__down-levels {
+.left__list,
+.left__text {
   list-style: none;
 }
 
-.left__softwares-title {
-  margin-left: 20px;
+.left__title {
+  margin-left: 10px;
 }
 
 .right {
   background-color: #152a37;
   width: 60%;
-  border-left: medium solid black;
   color: white;
+  padding: 10px 25px;
 }
 
 .right__title,
-.right__text,
+.right__text, {
+  margin-left: 10px;
+}
+
 .right__list {
   margin-left: 10px;
+  list-style: none;
 }
 
 footer {
