@@ -114,17 +114,85 @@ hr {
   width: 75%;
 }
 
+.left__title {
+  margin-top: 30px;
+}
+
+.left__list-li {
+  margin-top: 20px;
+}
+
 .left__softwares {
   display: flex;
 }
 
-.left__list,
-.left__text {
+.left__list {
   list-style: none;
 }
 
-.left__title {
+.left__points {
+  display: flex;
+  height: 22px;
+  padding: 10px 25px;
+}
+
+.left__points-black {
+  border-radius: 50%;
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.left__points-white {
+  border-radius: 50%;
+  background-color: var(--white-color);
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.left__subtitle,
+.left__text {
   margin-left: 10px;
+  margin-top: 20px;
+}
+
+.left__bar {
+  width: 77%;
+  height: 17px;
+  background-color: grey;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.left__ProgressBar-spanish {
+  width: 99%;
+  height: 13px;
+  background-color: var(--secondary-color);
+  border-radius: 13px;
+  margin-left: 1px;
+}
+
+.left__ProgressBar-english {
+  width: 49%;
+  height: 13px;
+  background-color: var(--secondary-color);
+  border-radius: 13px;
+  margin-left: 1px;
+}
+
+.left__text-english {
+  position: absolute;
+  left: 45%;
+}
+
+.left__text-spanish {
+  position: absolute;
+  left: 39%;
 }
 
 .right {
@@ -134,9 +202,9 @@ hr {
   padding: 10px 25px;
 }
 
-.right__title,
-.right__text, {
-  margin-left: 10px;
+.right__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .right__list {
