@@ -13,14 +13,14 @@ function contacting() {
   alert("I will get in contact whit you as soon as posible");
 }
 
-document.getElementById("id-sun").onclick = function () {
+document.getElementById("sun").onclick = function () {
   document.getElementById("document").classList.remove("darkmode");
-  document.getElementById("id-moon").classList.remove("active");
-  document.getElementById("id-sun").classList.add("active");
+  document.getElementById("moon").classList.remove("active");
+  document.getElementById("sun").classList.add("active");
 };
 
-document.getElementById("id-moon").onclick = function () {
+document.getElementById("moon").onclick = function () {
   document.getElementById("document").classList.add("darkmode");
-  document.getElementById("id-sun").classList.remove("active");
-  document.getElementById("id-moon").classList.add("active");
+  document.getElementById("sun").classList.remove("active");
+  document.getElementById("moon").classList.add("active");
 };

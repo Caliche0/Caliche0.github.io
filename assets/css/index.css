@@ -1,0 +1,146 @@
+:root {
+  --main-color: #326184;
+  --white-color: #ffffff;
+  --secondary-color: #152a37;
+  --black-color: #000000;
+  --gray-color: #5e574f;
+  --darkgray-color: #2c2821;
+  --lightgray-color: #968d84;
+}
+
+main {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.left {
+  background-color: var(--main-color);
+  width: 40%;
+  padding: 10px 25px;
+}
+
+.left__up {
+  background-color: var(--main-color);
+  text-align: center;
+}
+
+.left__up-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.left__up-hr {
+  color: var(--white-color);
+  width: 75%;
+  margin: 0 auto;
+}
+
+hr {
+  color: var(--white-color);
+  width: 75%;
+}
+
+.left__title {
+  margin-top: 30px;
+}
+
+.left__list-li {
+  margin-top: 20px;
+}
+
+.left__softwares {
+  display: flex;
+}
+
+.left__list {
+  list-style: none;
+}
+
+.left__points {
+  display: flex;
+  height: 22px;
+  padding: 10px 25px;
+}
+
+.left__points-black {
+  border-radius: 50%;
+  background-color: var(--black-color);
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.left__points-white {
+  border-radius: 50%;
+  background-color: var(--white-color);
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.left__subtitle,
+.left__text {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.left__bar {
+  width: 77%;
+  height: 17px;
+  background-color: var(--gray-color);
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.left__ProgressBar-spanish {
+  width: 99%;
+  height: 13px;
+  background-color: var(--secondary-color);
+  border-radius: 13px;
+  margin-left: 1px;
+}
+
+.left__ProgressBar-english {
+  width: 49%;
+  height: 13px;
+  background-color: var(--secondary-color);
+  border-radius: 13px;
+  margin-left: 1px;
+}
+
+.left__text-english {
+  position: absolute;
+  left: 45%;
+}
+
+.left__text-spanish {
+  position: absolute;
+  left: 39%;
+}
+
+.right {
+  background-color: var(--secondary-color);
+  width: 60%;
+  color: var(--white-color);
+  padding: 10px 25px;
+}
+
+.right__title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.right__list {
+  margin-left: 10px;
+  list-style: none;
+}
+
+.darkmode .left__bar {
+  background-color: var(--lightgray-color);
+}
