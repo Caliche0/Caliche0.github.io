@@ -5,6 +5,9 @@
   --white-color: #ffffff;
   --secondary-color: #152a37;
   --black-color: #000000;
+  --gray-color: #5e574f;
+  --darkgray-color: #2c2821;
+  --lightgray-color: #968d84;
 }
 
 body {
@@ -45,6 +48,10 @@ body {
   align-items: center;
 }
 
+.nav__items {
+  margin-right: 125px;
+}
+
 .nav__items span {
   position: relative;
   z-index: 2;
@@ -78,6 +85,41 @@ body {
   top: -100%;
   left: 0;
   transition: 0.4s ease-in-out all;
+}
+
+.container-btn-mode {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 0;
+}
+.btn-mode {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  border: 2px solid black;
+  transition: background-color 0.5s;
+}
+.btn-mode i {
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  line-height: 30px;
+}
+.btn-mode.sun {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 1px solid transparent;
+}
+.btn-mode.moon {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.active {
+  background-color: black;
+  color: #ffcd5c !important;
 }
 
 main {
@@ -139,7 +181,7 @@ hr {
 
 .left__points-black {
   border-radius: 50%;
-  background-color: black;
+  background-color: var(--black-color);
   width: 10px;
   height: 10px;
   margin-right: 5px;
@@ -162,7 +204,7 @@ hr {
 .left__bar {
   width: 77%;
   height: 17px;
-  background-color: grey;
+  background-color: var(--gray-color);
   border-radius: 13px;
   display: flex;
   align-items: center;
@@ -250,7 +292,7 @@ input {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--main-color);
+  border-color: var(--white-color);
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -263,7 +305,7 @@ textarea {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--main-color);
+  border-color: var(--white-color);
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -283,10 +325,10 @@ button {
   margin-top: 10px;
   text-transform: uppercase;
   background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  border-color: var(--white-color);
   border-style: solid;
   border-radius: 10px;
-  width: 420px;
+  width: 405px;
   cursor: pointer;
 }
 
@@ -303,4 +345,39 @@ button p {
 .form__text {
   font-size: 16px;
   padding-bottom: 30px;
+}
+
+.darkmode {
+  background: rgb(94, 87, 79);
+  background: linear-gradient(
+    45deg,
+    rgba(94, 87, 79, 1) 0%,
+    rgba(225, 225, 225, 1) 50%,
+    rgba(44, 40, 33, 1) 100%
+  );
+}
+
+.darkmode .nav,
+.darkmode .left,
+.darkmode .footer__container,
+.darkmode footer,
+.darkmode .left__up,
+.darkmode .Form {
+  background-color: var(--gray-color);
+}
+
+.darkmode .left__bar {
+  background-color: var(--lightgray-color);
+}
+
+.darkmode .right,
+.darkmode .left__ProgressBar-spanish,
+.darkmode .left__ProgressBar-english,
+.darkmode .nav__items a::after {
+  background-color: var(--darkgray-color);
+}
+
+.darkmode button {
+  border-color: var(--lightgray-color);
+  background-color: var(--darkgray-color);
 }
