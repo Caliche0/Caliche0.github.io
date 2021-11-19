@@ -87,7 +87,7 @@ main {
 }
 
 .left {
-  background-color:var(--main-color);
+  background-color: var(--main-color);
   width: 40%;
   padding: 10px 25px;
 }
@@ -228,6 +228,14 @@ footer {
   align-items: center;
 }
 
+.footer__text {
+  display: flex;
+}
+
+#year {
+  margin-right: 10px;
+}
+
 .Form {
   width: 460px;
   margin: 0 auto;
@@ -283,7 +291,7 @@ button {
 }
 
 button p {
-  color:var(--white-color);
+  color: var(--white-color);
 }
 
 .form__title {
@@ -296,4 +304,3 @@ button p {
   font-size: 16px;
   padding-bottom: 30px;
 }
-

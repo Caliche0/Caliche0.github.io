@@ -21,7 +21,7 @@
   </header>
   <main>
     <div class="Form">
-      <h1 class="form__title" >Contact Form</h1>
+      <h1 class="form__title">Contact Form</h1>
       <h3 class="form__text">Write your data and I will contact you as soon as posible </h3>
       <p class="form__box">
         <label class="form__label">Name
@@ -35,29 +35,33 @@
       </p>
 
       <p class="form__box">
-        <label class="form__label">Teléfono
+        <label class="form__label">phone
         </label>
         <input type="text" placeholder="write you phone number" style="color: black;">
       </p>
 
       <p class="form__box">
-        <label class="form__label">Mensaje
+        <label class="form__label">Message
 
         </label>
-        <textarea  style="color: black;" placeholder="leave your comment..."></textarea>
+        <textarea style="color: black;" placeholder="leave your comment..."></textarea>
       </p>
 
-      <button type="submit" name="enviar_formulario" id="enviar">
-        <p>Enviar</p>
+      <button onclick=contacting();>
+        <p>send</p>
       </button>
     </div>
   </main>
   <footer>
     <div class="footer__container">
       <h4>carlos david ordoñez</h4>
-      <h4> 2021 © copyright</h4>
+      <div class="footer__text">
+        <h4 id="year"></h4>
+        <h4>© copyright</h4>
+      </div>
     </div>
   </footer>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
