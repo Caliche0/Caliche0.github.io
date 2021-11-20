@@ -169,3 +169,28 @@ footer {
 .darkmode .nav__items a::after {
   background-color: var(--darkgray-color);
 }
+
+@media (max-width: 480px) {
+  .nav__items {
+    width: 150px;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer__container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav__logo {
+    display: none !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__container {
+    width: 95%;
+    font-size: small;
+  }
+}

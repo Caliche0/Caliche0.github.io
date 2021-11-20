@@ -81,3 +81,36 @@ button p {
   border-color: var(--lightgray-color);
   background-color: var(--darkgray-color);
 }
+
+@media (max-width: 480px) {
+  .Form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .Form {
+    padding-left: 0px;
+  }
+
+  .form__title,
+  .form__text,
+  label,
+  input,
+  textarea,
+  button {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .form__title,
+  .form__text,
+  label,
+  input,
+  textarea,
+  button {
+    margin-left: 5px;
+    width: 97%;
+  }
+}

@@ -47,10 +47,6 @@ hr {
   margin-top: 30px;
 }
 
-.left__list-li {
-  margin-top: 20px;
-}
-
 .left__softwares {
   display: flex;
 }
@@ -59,9 +55,22 @@ hr {
   list-style: none;
 }
 
+.left__list-li {
+  margin-top: 20px;
+  display: inline;
+}
+
 .left__points {
+  margin-top: 15px;
+  height: 28px;
+  padding: 10px 25px;
+  display: none !important;
+}
+
+.left__2points {
+  margin-top: 15px;
   display: flex;
-  height: 22px;
+  height: 28px;
   padding: 10px 25px;
 }
 
@@ -114,14 +123,14 @@ hr {
   margin-left: 1px;
 }
 
-.left__text-english {
-  position: absolute;
-  left: 45%;
-}
-
 .left__text-spanish {
   position: absolute;
   left: 39%;
+}
+
+.left__text-english {
+  position: absolute;
+  left: 45%;
 }
 
 .right {
@@ -143,4 +152,63 @@ hr {
 
 .darkmode .left__bar {
   background-color: var(--lightgray-color);
+}
+
+@media (max-width: 768px) {
+  .left__points {
+    display: flex !important;
+  }
+
+  .left__2points {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+
+  .left__ProgressBar-spanish {
+    width: 98%;
+  }
+
+  .left__bar {
+    height: 15px;
+  }
+
+  .left__text-spanish {
+    left: 31%;
+  }
+
+  .left__text-english {
+    left: 40%;
+  }
+
+  .fas:not(#sun-icon, #moon-icon),
+  .fab {
+    display: none !important;
+  }
+
+  .left__list-li {
+    display: inline;
+  }
+
+  .left__points {
+    display: flex !important;
+  }
+
+  .left__2points {
+    display: none !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .left {
+    padding: 0;
+  }
+
+  .left__down {
+    padding: 8px;
+  }
 }
